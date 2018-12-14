@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="400dp"
             android:layout_alignParentBottom="true"
-            android:background="#00ff00">
+            android:background="#D3D3D3">
 
             <RelativeLayout
                 android:id="@+id/music_info"
