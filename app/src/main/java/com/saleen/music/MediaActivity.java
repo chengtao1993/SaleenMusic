@@ -10,12 +10,14 @@ import android.util.Log;
 
 import com.saleen.music.Fragments.MusicMainFragment;
 import com.saleen.music.Fragments.MusicPlayFragment;
+import com.saleen.music.Fragments.MusicSearchFragment;
 
 public class MediaActivity extends AppCompatActivity{
     private FragmentManager fragmentManager = getSupportFragmentManager();
     private FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
     private MusicMainFragment musicMainFragment = new MusicMainFragment();
     private MusicPlayFragment musicPlayFragment = new MusicPlayFragment();
+    private MusicSearchFragment musicSearchFragment = new MusicSearchFragment();
     private Fragment mCurrentFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +25,7 @@ public class MediaActivity extends AppCompatActivity{
         setContentView(R.layout.activity_media);
         /*默认显示音乐主界面*/
         fragmentTransaction.add(R.id.fragment_containner,musicMainFragment,"musicMainFragment")
-                .add(R.id.fragment_containner,musicPlayFragment,"musicPlayFragment").hide(musicPlayFragment).commit();
+                .add(R.id.fragment_containner,musicPlayFragment,"musicPlayFragment").hide(musicPlayFragment).add(R.id.fragment_containner,musicSearchFragment,"musicSearchFragment").hide(musicSearchFragment).commit();
     }
 
 
