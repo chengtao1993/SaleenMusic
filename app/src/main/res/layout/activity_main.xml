@@ -4,30 +4,63 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentTop="true"
-        android:background="#D3D3D3">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_gravity="center"
-            android:text="音乐"
-            android:textSize="20dp"
-            />
+       <RelativeLayout
+           android:id="@+id/title_bar"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_alignParentTop="true"
+           android:background="#D3D3D3">
 
-        <ImageView
-            android:id="@+id/search_btn"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="39dp"
-            android:src="@drawable/search_btn" />
-    </RelativeLayout>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:layout_gravity="center"
+               android:text="音乐"
+               android:textSize="20dp"
+               />
+
+           <ImageView
+               android:id="@+id/search_btn"
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:layout_alignParentEnd="true"
+               android:layout_centerVertical="true"
+               android:layout_marginEnd="39dp"
+               android:src="@drawable/search_btn" />
+       </RelativeLayout>
+       <LinearLayout
+           android:padding="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <Button
+               android:text="随便听"
+               android:layout_width="0dp"
+               android:layout_height="100dp"
+               android:layout_weight="1"
+               />
+           <View
+               android:layout_width="5dp"
+               android:layout_height="match_parent"/>
+           <Button
+               android:text="我的收藏"
+               android:layout_width="0dp"
+               android:layout_height="100dp"
+               android:layout_weight="1"
+               />
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+
+
+
 
     <LinearLayout
         android:layout_width="match_parent"

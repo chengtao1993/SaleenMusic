@@ -26,8 +26,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.back:
-                Intent backToMainActivityIntent = new Intent(this,MainActivity.class);
-                startActivity(backToMainActivityIntent);
+                finish();
                 break;
         }
     }

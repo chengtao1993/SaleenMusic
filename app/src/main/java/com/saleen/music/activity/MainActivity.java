@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.music_info:
                 Intent skipToPlayActitvity = new Intent(this,PlayActivity.class);
                 startActivity(skipToPlayActitvity);
-
                 break;
             case R.id.search_btn:
                 Intent skipToSearchActitvity = new Intent(this,SearchActivity.class);

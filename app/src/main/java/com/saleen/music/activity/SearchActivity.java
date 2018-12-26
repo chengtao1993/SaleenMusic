@@ -26,8 +26,8 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view) {
         switch(view.getId()){
             case R.id.btn_back:
-                Intent backToMainActivityItent = new Intent(this,MainActivity.class);
-                startActivity(backToMainActivityItent);
+                finish();
+                break;
         }
     }
 }
