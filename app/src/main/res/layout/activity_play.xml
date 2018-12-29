@@ -82,6 +82,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/lyric_btn"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignBottom="@+id/song_pic"
@@ -113,6 +114,7 @@
             android:layout_height="wrap_content" />
     </LinearLayout>
     <SeekBar
+        android:id="@+id/seekbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -174,11 +176,10 @@
                 android:layout_weight="1"/>
 
             <ImageButton
-                android:id="@+id/playMode"
+                android:id="@+id/play_mode"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/play_mode2"
-                />
+                android:background="@drawable/play_mode2" />
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -206,7 +207,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 </LinearLayout>
-
+    <ListView
+        android:id="@+id/song_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></ListView>
 
 
 </LinearLayout>

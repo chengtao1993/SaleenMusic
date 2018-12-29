@@ -1,15 +1,12 @@
 package com.saleen.music.activity;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.saleen.music.R;
 
-public class SearchActivity extends AppCompatActivity implements View.OnClickListener{
-    private View musicSearchFragmentView;
+public class SearchActivity extends BaseActivity implements View.OnClickListener{
     private ImageView backBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,8 +14,19 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_search);
         initViews();
     }
+
+    @Override
+    public void publish(int progress) {
+
+    }
+
+    @Override
+    public void change(int progress) {
+
+    }
+
     private void initViews() {
-        backBtn = findViewById(R.id.btn_back);
+        backBtn = $(R.id.btn_back);
         backBtn.setOnClickListener(this);
     }
 
